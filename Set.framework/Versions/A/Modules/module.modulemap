@@ -1,0 +1,10 @@
+framework module Set {
+  umbrella header "Set.h"
+
+  export *
+  module * { export * }
+}
+
+module Set.Swift {
+    header "Set-Swift.h"
+}
