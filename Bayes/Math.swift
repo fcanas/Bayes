@@ -11,8 +11,18 @@ public func product <S :SequenceType where S.Generator.Element == Double> (s: S)
 }
 
 public func argmax <T, V: Comparable> (collection :[T:V]) -> T? {
-    if collection.isEmpty {
-        return nil
+    return vararg({ $0 > $1 })(collection: collection)
+}
+
+public func argmin <T, V: Comparable> (collection :[T:V]) -> T? {
+    return vararg({ $0 < $1 })(collection: collection)
+}
+
+private func vararg <T, V: Comparable> (f: (V, V) -> Bool) -> (collection :[T:V]) -> T? {
+    return { collection in
+        if collection.isEmpty {
+            return nil
+        }
+        return reduce(collection, collection[collection.startIndex]) { f($0.1 , $1.1) ? $0 : $1 }.0
     }
-    return reduce(collection, collection[collection.startIndex]) { $0.1 > $1.1 ? $0 : $1 }.0
 }

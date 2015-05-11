@@ -7,30 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E75E9E4D1AFEAFE700D37026 /* Bayes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E75E9E421AFEAFE700D37026 /* Bayes.framework */; };
-		E75E9E6B1AFEAFFF00D37026 /* Bayes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E75E9E601AFEAFFF00D37026 /* Bayes.framework */; };
-		E75E9E7C1AFECC4000D37026 /* Set.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E75E9E7B1AFECC4000D37026 /* Set.framework */; };
-		E75E9E7E1AFECCC800D37026 /* Observations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E9E7D1AFECCC800D37026 /* Observations.swift */; };
-		E75E9E7F1AFECCC800D37026 /* Observations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E9E7D1AFECCC800D37026 /* Observations.swift */; };
 		E75E9E811AFED50200D37026 /* HashableTouple.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E9E801AFED50200D37026 /* HashableTouple.swift */; };
 		E75E9E821AFED50200D37026 /* HashableTouple.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E9E801AFED50200D37026 /* HashableTouple.swift */; };
 		E75E9E841AFED5E400D37026 /* EventSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E9E831AFED5E400D37026 /* EventSpace.swift */; };
 		E75E9E851AFED5E400D37026 /* EventSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E9E831AFED5E400D37026 /* EventSpace.swift */; };
 		E75E9E8A1AFEE1F300D37026 /* BayesianClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E9E891AFEE1F300D37026 /* BayesianClassifier.swift */; };
 		E75E9E8B1AFEE1F300D37026 /* BayesianClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E9E891AFEE1F300D37026 /* BayesianClassifier.swift */; };
+		E76D1FBC1B013E4A007C499A /* IncrementingBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76D1FBB1B013E4A007C499A /* IncrementingBag.swift */; };
+		E76D1FBD1B013E4A007C499A /* IncrementingBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76D1FBB1B013E4A007C499A /* IncrementingBag.swift */; };
+		E76D1FC81B013F16007C499A /* Bayes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E75E9E601AFEAFFF00D37026 /* Bayes.framework */; };
+		E76D1FCF1B013F51007C499A /* MathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76D1FCE1B013F51007C499A /* MathTests.swift */; };
+		E76D1FD31B01468D007C499A /* EventSpaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76D1FD21B01468D007C499A /* EventSpaceTests.swift */; };
+		E76D1FD51B0152F8007C499A /* NaiveClassifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76D1FD41B0152F8007C499A /* NaiveClassifierTests.swift */; };
 		E7BA6BFC1B010A0E006B4883 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BA6BFB1B010A0E006B4883 /* Math.swift */; };
 		E7BA6BFD1B010AB7006B4883 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BA6BFB1B010A0E006B4883 /* Math.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E75E9E4E1AFEAFE700D37026 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E75E9E181AFEAF6C00D37026 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E75E9E411AFEAFE700D37026;
-			remoteInfo = "Bayes-iOS";
-		};
-		E75E9E6C1AFEAFFF00D37026 /* PBXContainerItemProxy */ = {
+		E76D1FC91B013F16007C499A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E75E9E181AFEAF6C00D37026 /* Project object */;
 			proxyType = 1;
@@ -42,17 +36,17 @@
 /* Begin PBXFileReference section */
 		E75E9E251AFEAF6C00D37026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E75E9E261AFEAF6C00D37026 /* Bayes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bayes.h; sourceTree = "<group>"; };
-		E75E9E321AFEAF6C00D37026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E75E9E331AFEAF6C00D37026 /* BayesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BayesTests.swift; sourceTree = "<group>"; };
 		E75E9E421AFEAFE700D37026 /* Bayes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bayes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E75E9E4C1AFEAFE700D37026 /* Bayes-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bayes-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E75E9E601AFEAFFF00D37026 /* Bayes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bayes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E75E9E6A1AFEAFFF00D37026 /* Bayes-MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bayes-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E75E9E7B1AFECC4000D37026 /* Set.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Set.framework; sourceTree = "<group>"; };
-		E75E9E7D1AFECCC800D37026 /* Observations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observations.swift; sourceTree = "<group>"; };
 		E75E9E801AFED50200D37026 /* HashableTouple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashableTouple.swift; sourceTree = "<group>"; };
 		E75E9E831AFED5E400D37026 /* EventSpace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventSpace.swift; sourceTree = "<group>"; };
 		E75E9E891AFEE1F300D37026 /* BayesianClassifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BayesianClassifier.swift; sourceTree = "<group>"; };
+		E76D1FBB1B013E4A007C499A /* IncrementingBag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncrementingBag.swift; sourceTree = "<group>"; };
+		E76D1FC21B013F16007C499A /* Bayes Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bayes Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E76D1FC51B013F16007C499A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E76D1FCE1B013F51007C499A /* MathTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathTests.swift; sourceTree = "<group>"; };
+		E76D1FD21B01468D007C499A /* EventSpaceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventSpaceTests.swift; sourceTree = "<group>"; };
+		E76D1FD41B0152F8007C499A /* NaiveClassifierTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaiveClassifierTests.swift; sourceTree = "<group>"; };
 		E7BA6BFB1B010A0E006B4883 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,27 +58,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E75E9E491AFEAFE700D37026 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E75E9E4D1AFEAFE700D37026 /* Bayes.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E75E9E5C1AFEAFFF00D37026 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E75E9E7C1AFECC4000D37026 /* Set.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E75E9E671AFEAFFF00D37026 /* Frameworks */ = {
+		E76D1FBF1B013F16007C499A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E75E9E6B1AFEAFFF00D37026 /* Bayes.framework in Frameworks */,
+				E76D1FC81B013F16007C499A /* Bayes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,8 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				E75E9E231AFEAF6C00D37026 /* Bayes */,
-				E75E9E301AFEAF6C00D37026 /* BayesTests */,
-				E75E9E7A1AFECC0200D37026 /* Frameworks */,
+				E76D1FC31B013F16007C499A /* Bayes Tests */,
 				E75E9E221AFEAF6C00D37026 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,9 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				E75E9E421AFEAFE700D37026 /* Bayes.framework */,
-				E75E9E4C1AFEAFE700D37026 /* Bayes-iOSTests.xctest */,
 				E75E9E601AFEAFFF00D37026 /* Bayes.framework */,
-				E75E9E6A1AFEAFFF00D37026 /* Bayes-MacTests.xctest */,
+				E76D1FC21B013F16007C499A /* Bayes Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,11 +100,11 @@
 			children = (
 				E75E9E261AFEAF6C00D37026 /* Bayes.h */,
 				E75E9E241AFEAF6C00D37026 /* Supporting Files */,
-				E75E9E7D1AFECCC800D37026 /* Observations.swift */,
 				E75E9E801AFED50200D37026 /* HashableTouple.swift */,
 				E75E9E831AFED5E400D37026 /* EventSpace.swift */,
 				E75E9E891AFEE1F300D37026 /* BayesianClassifier.swift */,
 				E7BA6BFB1B010A0E006B4883 /* Math.swift */,
+				E76D1FBB1B013E4A007C499A /* IncrementingBag.swift */,
 			);
 			path = Bayes;
 			sourceTree = "<group>";
@@ -134,29 +117,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E75E9E301AFEAF6C00D37026 /* BayesTests */ = {
+		E76D1FC31B013F16007C499A /* Bayes Tests */ = {
 			isa = PBXGroup;
 			children = (
-				E75E9E331AFEAF6C00D37026 /* BayesTests.swift */,
-				E75E9E311AFEAF6C00D37026 /* Supporting Files */,
+				E76D1FC41B013F16007C499A /* Supporting Files */,
+				E76D1FCE1B013F51007C499A /* MathTests.swift */,
+				E76D1FD21B01468D007C499A /* EventSpaceTests.swift */,
+				E76D1FD41B0152F8007C499A /* NaiveClassifierTests.swift */,
 			);
-			path = BayesTests;
+			path = "Bayes Tests";
 			sourceTree = "<group>";
 		};
-		E75E9E311AFEAF6C00D37026 /* Supporting Files */ = {
+		E76D1FC41B013F16007C499A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E75E9E321AFEAF6C00D37026 /* Info.plist */,
+				E76D1FC51B013F16007C499A /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E75E9E7A1AFECC0200D37026 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E75E9E7B1AFECC4000D37026 /* Set.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,24 +174,6 @@
 			productReference = E75E9E421AFEAFE700D37026 /* Bayes.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E75E9E4B1AFEAFE700D37026 /* Bayes-iOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E75E9E581AFEAFE700D37026 /* Build configuration list for PBXNativeTarget "Bayes-iOSTests" */;
-			buildPhases = (
-				E75E9E481AFEAFE700D37026 /* Sources */,
-				E75E9E491AFEAFE700D37026 /* Frameworks */,
-				E75E9E4A1AFEAFE700D37026 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E75E9E4F1AFEAFE700D37026 /* PBXTargetDependency */,
-			);
-			name = "Bayes-iOSTests";
-			productName = "Bayes-iOSTests";
-			productReference = E75E9E4C1AFEAFE700D37026 /* Bayes-iOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		E75E9E5F1AFEAFFF00D37026 /* Bayes-Mac */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E75E9E731AFEAFFF00D37026 /* Build configuration list for PBXNativeTarget "Bayes-Mac" */;
@@ -233,22 +192,22 @@
 			productReference = E75E9E601AFEAFFF00D37026 /* Bayes.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E75E9E691AFEAFFF00D37026 /* Bayes-MacTests */ = {
+		E76D1FC11B013F16007C499A /* Bayes Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E75E9E761AFEAFFF00D37026 /* Build configuration list for PBXNativeTarget "Bayes-MacTests" */;
+			buildConfigurationList = E76D1FCB1B013F16007C499A /* Build configuration list for PBXNativeTarget "Bayes Tests" */;
 			buildPhases = (
-				E75E9E661AFEAFFF00D37026 /* Sources */,
-				E75E9E671AFEAFFF00D37026 /* Frameworks */,
-				E75E9E681AFEAFFF00D37026 /* Resources */,
+				E76D1FBE1B013F16007C499A /* Sources */,
+				E76D1FBF1B013F16007C499A /* Frameworks */,
+				E76D1FC01B013F16007C499A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E75E9E6D1AFEAFFF00D37026 /* PBXTargetDependency */,
+				E76D1FCA1B013F16007C499A /* PBXTargetDependency */,
 			);
-			name = "Bayes-MacTests";
-			productName = "Bayes-MacTests";
-			productReference = E75E9E6A1AFEAFFF00D37026 /* Bayes-MacTests.xctest */;
+			name = "Bayes Tests";
+			productName = "Bayes Tests";
+			productReference = E76D1FC21B013F16007C499A /* Bayes Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -263,13 +222,10 @@
 					E75E9E411AFEAFE700D37026 = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
-					E75E9E4B1AFEAFE700D37026 = {
-						CreatedOnToolsVersion = 6.3.1;
-					};
 					E75E9E5F1AFEAFFF00D37026 = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
-					E75E9E691AFEAFFF00D37026 = {
+					E76D1FC11B013F16007C499A = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
 				};
@@ -287,22 +243,14 @@
 			projectRoot = "";
 			targets = (
 				E75E9E411AFEAFE700D37026 /* Bayes-iOS */,
-				E75E9E4B1AFEAFE700D37026 /* Bayes-iOSTests */,
 				E75E9E5F1AFEAFFF00D37026 /* Bayes-Mac */,
-				E75E9E691AFEAFFF00D37026 /* Bayes-MacTests */,
+				E76D1FC11B013F16007C499A /* Bayes Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E75E9E401AFEAFE700D37026 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E75E9E4A1AFEAFE700D37026 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -316,7 +264,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E75E9E681AFEAFFF00D37026 /* Resources */ = {
+		E76D1FC01B013F16007C499A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -333,15 +281,8 @@
 				E75E9E8A1AFEE1F300D37026 /* BayesianClassifier.swift in Sources */,
 				E75E9E841AFED5E400D37026 /* EventSpace.swift in Sources */,
 				E75E9E811AFED50200D37026 /* HashableTouple.swift in Sources */,
-				E75E9E7E1AFECCC800D37026 /* Observations.swift in Sources */,
 				E7BA6BFC1B010A0E006B4883 /* Math.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E75E9E481AFEAFE700D37026 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				E76D1FBC1B013E4A007C499A /* IncrementingBag.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,30 +293,28 @@
 				E75E9E8B1AFEE1F300D37026 /* BayesianClassifier.swift in Sources */,
 				E75E9E851AFED5E400D37026 /* EventSpace.swift in Sources */,
 				E75E9E821AFED50200D37026 /* HashableTouple.swift in Sources */,
-				E75E9E7F1AFECCC800D37026 /* Observations.swift in Sources */,
 				E7BA6BFD1B010AB7006B4883 /* Math.swift in Sources */,
+				E76D1FBD1B013E4A007C499A /* IncrementingBag.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E75E9E661AFEAFFF00D37026 /* Sources */ = {
+		E76D1FBE1B013F16007C499A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E76D1FD31B01468D007C499A /* EventSpaceTests.swift in Sources */,
+				E76D1FD51B0152F8007C499A /* NaiveClassifierTests.swift in Sources */,
+				E76D1FCF1B013F51007C499A /* MathTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E75E9E4F1AFEAFE700D37026 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E75E9E411AFEAFE700D37026 /* Bayes-iOS */;
-			targetProxy = E75E9E4E1AFEAFE700D37026 /* PBXContainerItemProxy */;
-		};
-		E75E9E6D1AFEAFFF00D37026 /* PBXTargetDependency */ = {
+		E76D1FCA1B013F16007C499A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E75E9E5F1AFEAFFF00D37026 /* Bayes-Mac */;
-			targetProxy = E75E9E6C1AFEAFFF00D37026 /* PBXContainerItemProxy */;
+			targetProxy = E76D1FC91B013F16007C499A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -506,36 +445,6 @@
 			};
 			name = Release;
 		};
-		E75E9E591AFEAFE700D37026 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BayesTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		E75E9E5A1AFEAFE700D37026 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BayesTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		E75E9E741AFEAFFF00D37026 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -590,7 +499,7 @@
 			};
 			name = Release;
 		};
-		E75E9E771AFEAFFF00D37026 /* Debug */ = {
+		E76D1FCC1B013F16007C499A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -603,7 +512,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = BayesTests/Info.plist;
+				INFOPLIST_FILE = "Bayes Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -611,7 +520,7 @@
 			};
 			name = Debug;
 		};
-		E75E9E781AFEAFFF00D37026 /* Release */ = {
+		E76D1FCD1B013F16007C499A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -619,7 +528,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = BayesTests/Info.plist;
+				INFOPLIST_FILE = "Bayes Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -648,15 +557,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E75E9E581AFEAFE700D37026 /* Build configuration list for PBXNativeTarget "Bayes-iOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E75E9E591AFEAFE700D37026 /* Debug */,
-				E75E9E5A1AFEAFE700D37026 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		E75E9E731AFEAFFF00D37026 /* Build configuration list for PBXNativeTarget "Bayes-Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -666,14 +566,13 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E75E9E761AFEAFFF00D37026 /* Build configuration list for PBXNativeTarget "Bayes-MacTests" */ = {
+		E76D1FCB1B013F16007C499A /* Build configuration list for PBXNativeTarget "Bayes Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E75E9E771AFEAFFF00D37026 /* Debug */,
-				E75E9E781AFEAFFF00D37026 /* Release */,
+				E76D1FCC1B013F16007C499A /* Debug */,
+				E76D1FCD1B013F16007C499A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

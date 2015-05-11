@@ -10,6 +10,11 @@ public struct BayesianClassifier<C :Hashable, F :Hashable> {
     typealias Feature = F
     typealias Category = C
     
+    public init() {}
+    public init(eventSpace: EventSpace<Category,Feature>){
+        self.eventSpace = eventSpace
+    }
+    
     public var eventSpace :EventSpace<Category,Feature> = EventSpace<Category,Feature>()
     
     public func classify(features :[Feature]) -> Category? {

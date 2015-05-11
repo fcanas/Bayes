@@ -17,5 +17,4 @@ Pod::Spec.new do |s|
   
   s.source_files  = "Bayes", "bayes/**/*.{h,swift}"
   s.exclude_files = "Classes/Exclude"
-  s.dependency "Set", "~> 1.4"
 end
