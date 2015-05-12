@@ -2,7 +2,7 @@
 
 Bayes is a [Naive Bayes Classifier](http://en.wikipedia.org/wiki/Naive_Bayes_classifier) for iOS and Mac platforms. 
 
-Bayes is implemented in Swift, and takes advantage of generics to let you classify any type of your choosing.
+Bayes is implemented in Swift and takes advantage of generics to enable any `Hashable`, `Equatable` type of your choosing or creation for use as category or feature. 
 
 ## Installation
 
