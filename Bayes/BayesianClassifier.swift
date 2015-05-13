@@ -6,6 +6,10 @@
 //  Copyright (c) 2015 Fabian Canas. All rights reserved.
 //
 
+import Foundation
+
+let nonZeroLog = 0.00000001
+
 public struct BayesianClassifier<C :Hashable, F :Hashable> {
     typealias Feature = F
     typealias Category = C
@@ -24,7 +28,7 @@ public struct BayesianClassifier<C :Hashable, F :Hashable> {
     public func categoryProbabilities(features: [Feature]) -> [Category: Double] {
         return reduce(eventSpace.categories, [C:Double](), {(v: [C:Double], c: Category) in
             var mv = v
-            mv[c] = self.eventSpace.P(c) * product(map(features, {self.eventSpace.P($0, givenCategory: c)}))
+            mv[c] = log(self.eventSpace.P(c)) + sum(map(features, { log(self.eventSpace.P($0, givenCategory: c) + nonZeroLog) }))
             return mv
         })
     }

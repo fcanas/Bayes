@@ -38,7 +38,27 @@ class NaiveClassifierTests: XCTestCase {
         XCTAssertEqual(classifier.classify(["bark", "tail"])!, "Dog", "Should categorize as Dog, due to bark")
         XCTAssertEqual(classifier.classify(["tail"])!, "Cat", "Should categorize as Cat, due to base rate")
         XCTAssertEqual(classifier.classify(["paw", "tail"])!, "Dog", "Should categorize as Dog, due to prevalence of paw")
-        XCTAssertEqual(classifier.classify(["paw", "tail", "meow"])!, "Cat", "Should categorize as Cat, due to prevalence of paw")
+        XCTAssertEqual(classifier.classify(["paw", "tail", "meow"])!, "Cat", "Should categorize as Cat, due to meow")
+        XCTAssertEqual(classifier.classify(["paw"])!, "Dog", "Should categorize as Dog, due to prevalence of paw")
+    }
+    
+    func testLogSpaceClassification() {
+        var eventSpace = EventSpace<String, String>()
+        
+        eventSpace.observe("Cat", features: ["paw", "tail", "claw"])
+        eventSpace.observe("Cat", features: ["stripe", "tail", "whisker", "ear"])
+        eventSpace.observe("Cat", features: ["meow", "vertical pupil"])
+        
+        eventSpace.observe("Dog", features: ["paw", "tail", "bark"])
+        eventSpace.observe("Dog", features: ["wag", "fetch", "tail", "paw"])
+        
+        var classifier = BayesianClassifier(eventSpace: eventSpace)
+        
+        XCTAssertEqual(classifier.classify(["claw", "tail", "collar"])!, "Cat", "Should categorize as Cat due to claw and ignore collar")
+        
+        println(classifier.categoryProbabilities(["bark", "tail", "collar"]))
+        XCTAssertEqual(classifier.classify(["bark", "tail", "collar"])!, "Dog", "Should categorize as Dog due to bark and ignore collar")
+        
     }
 
 }

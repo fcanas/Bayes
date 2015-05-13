@@ -10,6 +10,10 @@ public func product <S :SequenceType where S.Generator.Element == Double> (s: S)
     return reduce(s, Double(1.0), *)
 }
 
+public func sum <S :SequenceType where S.Generator.Element == Double> (s: S) -> Double {
+    return reduce(s, Double(0.0), +)
+}
+
 public func argmax <T, V: Comparable> (collection :[T:V]) -> T? {
     return vararg({ $0 > $1 })(collection: collection)
 }
