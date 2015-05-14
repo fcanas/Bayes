@@ -30,7 +30,7 @@ internal struct Bag <T :Hashable> {
         storage[element] = count(element) + 1
     }
     
-    mutating func append(elements: [T]) {
+    mutating func append<E: SequenceType where E.Generator.Element == T>(elements: E) {
         for element in elements {
             append(element)
         }

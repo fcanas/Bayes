@@ -22,7 +22,7 @@ public struct EventSpace <C: Hashable, F: Hashable> {
     private var _features :Bag<F> = Bag<F>()
     private var featureCategory :Bag<HashableTouple<C,F>> = Bag<HashableTouple<C,F>>()
     
-    public mutating func observe(category: Category, features: [Feature]) {
+    public mutating func observe <F: SequenceType where F.Generator.Element == Feature> (category: Category, features: F) {
         _categories.append(category)
         _features.append(features)
         featureCategory.append(map(features, {
