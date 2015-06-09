@@ -14,7 +14,6 @@ public struct BayesianClassifier<C :Hashable, F :Hashable> {
     typealias Feature = F
     typealias Category = C
     
-    public init() {}
     public init(eventSpace: EventSpace<Category,Feature>){
         self.eventSpace = eventSpace
     }
