@@ -25,9 +25,9 @@ public struct EventSpace <C: Hashable, F: Hashable> {
     public mutating func observe <F: SequenceType where F.Generator.Element == Feature> (category: Category, features: F) {
         _categories.append(category)
         _features.append(features)
-        featureCategory.append(map(features, {
+        featureCategory.append(features.map {
             HashableTouple(category,$0)
-        }))
+        })
     }
     
     public func P(feature: Feature, andCategory category: Category) -> Double {

@@ -26,9 +26,9 @@ public struct BayesianClassifier<C :Hashable, F :Hashable> {
     }
     
     public func categoryProbabilities <S :SequenceType where S.Generator.Element == Feature> (features: S) -> [Category: Double] {
-        return reduce(eventSpace.categories, [C:Double](), {(v: [C:Double], c: Category) in
+        return eventSpace.categories.reduce([C:Double](), combine: {(v: [C:Double], c: Category) in
             var mv = v
-            mv[c] = log(self.eventSpace.P(c)) + sum(map(features, { log(self.eventSpace.P($0, givenCategory: c) + nonZeroLog) }))
+            mv[c] = log(self.eventSpace.P(c)) + sum(features.map { log(self.eventSpace.P($0, givenCategory: c) + nonZeroLog) } )
             return mv
         })
     }

@@ -7,11 +7,11 @@
 //
 
 public func product <S :SequenceType where S.Generator.Element == Double> (s: S) -> Double {
-    return reduce(s, Double(1.0), *)
+    return s.reduce(Double(1.0), combine: *)
 }
 
 public func sum <S :SequenceType where S.Generator.Element == Double> (s: S) -> Double {
-    return reduce(s, Double(0.0), +)
+    return s.reduce(Double(0.0), combine: +)
 }
 
 public func argmax <T, V: Comparable> (collection :[T:V]) -> T? {
@@ -27,6 +27,6 @@ private func vararg <T, V: Comparable> (f: (V, V) -> Bool) -> (collection :[T:V]
         if collection.isEmpty {
             return nil
         }
-        return reduce(collection, collection[collection.startIndex]) { f($0.1 , $1.1) ? $0 : $1 }.0
+        return collection.reduce(collection[collection.startIndex]) { f($0.1 , $1.1) ? $0 : $1 }.0
     }
 }
