@@ -11,8 +11,8 @@ import Foundation
 let nonZeroLog = 0.00000001
 
 public struct BayesianClassifier<C :Hashable, F :Hashable> {
-    typealias Feature = F
-    typealias Category = C
+    public typealias Feature = F
+    public typealias Category = C
     
     public init(eventSpace: EventSpace<Category,Feature>){
         self.eventSpace = eventSpace
