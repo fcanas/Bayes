@@ -7,8 +7,8 @@
 //
 
 public struct EventSpace <C: Hashable, F: Hashable> {
-    typealias Category = C
-    typealias Feature = F
+    public typealias Category = C
+    public typealias Feature = F
     
     public init() {}
     
