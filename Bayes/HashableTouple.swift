@@ -20,7 +20,7 @@ internal struct HashableTouple<A : Hashable, B : Hashable> : Hashable {
     
     var hashValue :Int {
         get {
-            return (a.hashValue >> 2 ^ b.hashValue << 2) + (b.hashValue << 5 + a.hashValue >> 5)
+            return a.hashValue ^ b.hashValue
         }
     }
 }
