@@ -12,16 +12,6 @@ import Bayes
 
 class NaiveClassifierTests: XCTestCase {
 
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-
     func testBasicClassification() {
         var eventSpace = EventSpace<String, String>()
         
@@ -32,7 +22,7 @@ class NaiveClassifierTests: XCTestCase {
         eventSpace.observe("Dog", features: ["paw", "tail", "bark"])
         eventSpace.observe("Dog", features: ["wag", "fetch", "tail", "paw"])
         
-        var classifier = BayesianClassifier(eventSpace: eventSpace)
+        let classifier = BayesianClassifier(eventSpace: eventSpace)
         
         XCTAssertEqual(classifier.classify(["claw", "tail"])!, "Cat", "Should categorize as Cat, due to claw")
         XCTAssertEqual(classifier.classify(["bark", "tail"])!, "Dog", "Should categorize as Dog, due to bark")
@@ -52,11 +42,11 @@ class NaiveClassifierTests: XCTestCase {
         eventSpace.observe("Dog", features: ["paw", "tail", "bark"])
         eventSpace.observe("Dog", features: ["wag", "fetch", "tail", "paw"])
         
-        var classifier = BayesianClassifier(eventSpace: eventSpace)
+        let classifier = BayesianClassifier(eventSpace: eventSpace)
         
         XCTAssertEqual(classifier.classify(["claw", "tail", "collar"])!, "Cat", "Should categorize as Cat due to claw and ignore collar")
         
-        println(classifier.categoryProbabilities(["bark", "tail", "collar"]))
+        print(classifier.categoryProbabilities(["bark", "tail", "collar"]))
         XCTAssertEqual(classifier.classify(["bark", "tail", "collar"])!, "Dog", "Should categorize as Dog due to bark and ignore collar")
         
     }

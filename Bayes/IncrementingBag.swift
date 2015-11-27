@@ -18,7 +18,7 @@ internal struct Bag <T :Hashable> {
     
     var count :Int {
         get{
-            return reduce(storage, 0, { $0 + $1.1 })
+            return storage.reduce(0, combine: { $0 + $1.1 })
         }
     }
     

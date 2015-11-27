@@ -21,13 +21,22 @@ class MathTests: XCTestCase {
     }
     
     func testArgmax() {
-        XCTAssertEqual(argmax(["a":1,"b":12,"c":-25])!, "b", "Test Int argmax")
-        XCTAssertEqual(argmax(["a":100.3,"b":100.2,"c":-25.0])!, "a", "Test Double/Float argmax")
+        let b = argmax(["a":1,"b":12,"c":-25])!
+        XCTAssertEqual(b, "b", "Test Int argmax")
+        let a = argmax(["a":100.3,"b":100.2,"c":-25.0])!
+        XCTAssertEqual(a, "a", "Test Double/Float argmax")
     }
     
     func testArgmin() {
-        XCTAssertEqual(argmin(["a":1,"b":12,"c":-25])!, "c", "Test argmin")
-        XCTAssertEqual(argmax(["a":100.3,"b":100.2,"c":-100.1])!, "a", "Test Double/Float argmax")
+        let c = argmin(["a":1,"b":12,"c":-25])!
+        XCTAssertEqual(c, "c", "Test argmin")
+        let a = argmax(["a":100.3,"b":100.2,"c":-100.1])!
+        XCTAssertEqual(a, "a", "Test Double/Float argmax")
+    }
+    
+    func testEmptyVararg() {
+        let empty :[String: Double] = [:]
+        XCTAssertNil(argmax(empty))
     }
 
 }
