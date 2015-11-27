@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Fabian Canas. All rights reserved.
 //
 
-import Foundation
+import Darwin
 
 let nonZeroLog = 0.00000001
 
