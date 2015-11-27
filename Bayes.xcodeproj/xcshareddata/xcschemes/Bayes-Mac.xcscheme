@@ -46,9 +46,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E75E9E691AFEAFFF00D37026"
-               BuildableName = "Bayes-MacTests.xctest"
-               BlueprintName = "Bayes-MacTests"
+               BlueprintIdentifier = "E76D1FC11B013F16007C499A"
+               BuildableName = "Bayes Tests.xctest"
+               BlueprintName = "Bayes Tests"
                ReferencedContainer = "container:Bayes.xcodeproj">
             </BuildableReference>
          </TestableReference>
