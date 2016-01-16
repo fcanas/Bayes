@@ -1,5 +1,5 @@
 //
-//  HashableTouple.swift
+//  HashableTuple.swift
 //  Bayes
 //
 //  Created by Fabian Canas on 5/9/15.
@@ -9,7 +9,7 @@
 /** A (Hashable, Hashable) isn't Hashable. But it sure makes it easier to
 represent conditional probilities in a Set or Dictionary if they are
 */
-internal struct HashableTouple<A : Hashable, B : Hashable> : Hashable {
+internal struct HashableTuple<A : Hashable, B : Hashable> : Hashable {
     let a :A
     let b :B
     
@@ -20,11 +20,11 @@ internal struct HashableTouple<A : Hashable, B : Hashable> : Hashable {
     
     var hashValue :Int {
         get {
-            return (a.hashValue >> 2 ^ b.hashValue << 2) + (b.hashValue << 5 + a.hashValue >> 5)
+            return a.hashValue ^ b.hashValue
         }
     }
 }
 
-internal func == <A, B> (lhs: HashableTouple<A,B>, rhs: HashableTouple<A,B>) -> Bool {
+internal func == <A, B> (lhs: HashableTuple<A,B>, rhs: HashableTuple<A,B>) -> Bool {
     return lhs.a == rhs.a && lhs.b == rhs.b
 }
