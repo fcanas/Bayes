@@ -20,12 +20,12 @@ public struct BayesianClassifier<C :Hashable, F :Hashable> {
     
     public var eventSpace :EventSpace<Category,Feature> = EventSpace<Category,Feature>()
     
-    public func classify <S :SequenceType where S.Generator.Element == Feature> (features :S) -> Category? {
+    public func classify <S :Sequence> (_ features :S) -> Category? where S.Iterator.Element == Feature {
         return argmax(categoryProbabilities(features))
     }
     
-    public func categoryProbabilities <S :SequenceType where S.Generator.Element == Feature> (features: S) -> [Category: Double] {
-        return eventSpace.categories.reduce([C:Double](), combine: {(v: [C:Double], c: Category) in
+    public func categoryProbabilities <S :Sequence> (_ features: S) -> [Category: Double] where S.Iterator.Element == Feature {
+        return eventSpace.categories.reduce([C:Double](), {(v: [C:Double], c: Category) in
             var mv = v
             mv[c] = log(self.eventSpace.P(c)) + sum(features.map { log(self.eventSpace.P($0, givenCategory: c) + nonZeroLog) } )
             return mv

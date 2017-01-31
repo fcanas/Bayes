@@ -18,11 +18,11 @@ public struct EventSpace <C: Hashable, F: Hashable> {
         }
     }
     
-    private var _categories :Bag<C> = Bag<C>()
-    private var _features :Bag<F> = Bag<F>()
-    private var featureCategory :Bag<HashableTuple<C,F>> = Bag<HashableTuple<C,F>>()
+    fileprivate var _categories :Bag<C> = Bag<C>()
+    fileprivate var _features :Bag<F> = Bag<F>()
+    fileprivate var featureCategory :Bag<HashableTuple<C,F>> = Bag<HashableTuple<C,F>>()
     
-    public mutating func observe <F: SequenceType where F.Generator.Element == Feature> (category: Category, features: F) {
+    public mutating func observe <F: Sequence> (_ category: Category, features: F) where F.Iterator.Element == Feature {
         _categories.append(category)
         _features.append(features)
         featureCategory.append(features.map {
@@ -30,15 +30,15 @@ public struct EventSpace <C: Hashable, F: Hashable> {
         })
     }
     
-    public func P(feature: Feature, andCategory category: Category) -> Double {
+    public func P(_ feature: Feature, andCategory category: Category) -> Double {
         return Double(featureCategory.count(HashableTuple(category, feature))) / Double(_categories.count)
     }
     
-    public func P(feature: Feature, givenCategory category: Category) -> Double {
+    public func P(_ feature: Feature, givenCategory category: Category) -> Double {
         return P(feature, andCategory: category)/P(category)
     }
     
-    public func P(category: Category) -> Double {
+    public func P(_ category: Category) -> Double {
         return _categories.P(category)
     }
 }
