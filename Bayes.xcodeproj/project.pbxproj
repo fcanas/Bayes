@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E75E9E811AFED50200D37026 /* HashableTouple.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E9E801AFED50200D37026 /* HashableTouple.swift */; };
-		E75E9E821AFED50200D37026 /* HashableTouple.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E9E801AFED50200D37026 /* HashableTouple.swift */; };
+		E75E9E811AFED50200D37026 /* HashableTuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E9E801AFED50200D37026 /* HashableTuple.swift */; };
+		E75E9E821AFED50200D37026 /* HashableTuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E9E801AFED50200D37026 /* HashableTuple.swift */; };
 		E75E9E841AFED5E400D37026 /* EventSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E9E831AFED5E400D37026 /* EventSpace.swift */; };
 		E75E9E851AFED5E400D37026 /* EventSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E9E831AFED5E400D37026 /* EventSpace.swift */; };
 		E75E9E8A1AFEE1F300D37026 /* BayesianClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E9E891AFEE1F300D37026 /* BayesianClassifier.swift */; };
@@ -38,7 +38,7 @@
 		E75E9E261AFEAF6C00D37026 /* Bayes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bayes.h; sourceTree = "<group>"; };
 		E75E9E421AFEAFE700D37026 /* Bayes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bayes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E75E9E601AFEAFFF00D37026 /* Bayes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bayes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E75E9E801AFED50200D37026 /* HashableTouple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashableTouple.swift; sourceTree = "<group>"; };
+		E75E9E801AFED50200D37026 /* HashableTuple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashableTuple.swift; sourceTree = "<group>"; };
 		E75E9E831AFED5E400D37026 /* EventSpace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventSpace.swift; sourceTree = "<group>"; };
 		E75E9E891AFEE1F300D37026 /* BayesianClassifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BayesianClassifier.swift; sourceTree = "<group>"; };
 		E76D1FBB1B013E4A007C499A /* IncrementingBag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncrementingBag.swift; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 			children = (
 				E75E9E261AFEAF6C00D37026 /* Bayes.h */,
 				E75E9E241AFEAF6C00D37026 /* Supporting Files */,
-				E75E9E801AFED50200D37026 /* HashableTouple.swift */,
+				E75E9E801AFED50200D37026 /* HashableTuple.swift */,
 				E75E9E831AFED5E400D37026 /* EventSpace.swift */,
 				E75E9E891AFEE1F300D37026 /* BayesianClassifier.swift */,
 				E7BA6BFB1B010A0E006B4883 /* Math.swift */,
@@ -285,7 +285,7 @@
 			files = (
 				E75E9E8A1AFEE1F300D37026 /* BayesianClassifier.swift in Sources */,
 				E75E9E841AFED5E400D37026 /* EventSpace.swift in Sources */,
-				E75E9E811AFED50200D37026 /* HashableTouple.swift in Sources */,
+				E75E9E811AFED50200D37026 /* HashableTuple.swift in Sources */,
 				E7BA6BFC1B010A0E006B4883 /* Math.swift in Sources */,
 				E76D1FBC1B013E4A007C499A /* IncrementingBag.swift in Sources */,
 			);
@@ -297,7 +297,7 @@
 			files = (
 				E75E9E8B1AFEE1F300D37026 /* BayesianClassifier.swift in Sources */,
 				E75E9E851AFED5E400D37026 /* EventSpace.swift in Sources */,
-				E75E9E821AFED50200D37026 /* HashableTouple.swift in Sources */,
+				E75E9E821AFED50200D37026 /* HashableTuple.swift in Sources */,
 				E7BA6BFD1B010AB7006B4883 /* Math.swift in Sources */,
 				E76D1FBD1B013E4A007C499A /* IncrementingBag.swift in Sources */,
 			);

@@ -22,7 +22,13 @@ public struct EventSpace <C: Hashable, F: Hashable> {
     fileprivate var _features :Bag<F> = Bag<F>()
     fileprivate var featureCategory :Bag<HashableTuple<C,F>> = Bag<HashableTuple<C,F>>()
     
-    public mutating func observe <F: Sequence> (_ category: Category, features: F) where F.Iterator.Element == Feature {
+    /// Add an observed event in a category with associated features to the 
+    /// event space.
+    ///
+    /// - Parameters:
+    ///   - category: The category of the event to add to the event space
+    ///   - features: A sequence of features observed with the event
+    public mutating func observe <S: Sequence> (_ category: Category, features: S) where S.Iterator.Element == Feature {
         _categories.append(category)
         _features.append(features)
         featureCategory.append(features.map {
@@ -30,14 +36,33 @@ public struct EventSpace <C: Hashable, F: Hashable> {
         })
     }
     
+    /// The probability of observing the feature and category together
+    /// P( feature, category)
+    ///
+    /// - Parameters:
+    ///   - feature: feature
+    ///   - category: category
+    /// - Returns: The joint probability of feature and category
     public func P(_ feature: Feature, andCategory category: Category) -> Double {
         return Double(featureCategory.count(HashableTuple(category, feature))) / Double(_categories.count)
     }
     
+    /// The probability of observing a feature given a category.
+    /// P( feature | category )
+    ///
+    /// - Parameters:
+    ///   - feature: feature
+    ///   - category: category
+    /// - Returns: The conditional probability of the feature given the category
     public func P(_ feature: Feature, givenCategory category: Category) -> Double {
         return P(feature, andCategory: category)/P(category)
     }
     
+    /// Probability of observing a category
+    /// P( category )
+    ///
+    /// - Parameter category: category
+    /// - Returns: The base rate of the category
     public func P(_ category: Category) -> Double {
         return _categories.P(category)
     }

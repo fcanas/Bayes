@@ -6,8 +6,9 @@
 //  Copyright (c) 2015 Fabian Canas. All rights reserved.
 //
 
-/** A (Hashable, Hashable) isn't Hashable. But it sure makes it easier to
-represent conditional probilities in a Set or Dictionary if they are
+/** 
+ A (Hashable, Hashable) isn't Hashable. But representing conditional
+ probilities in a Set or Dictionary is easier if they are.
 */
 internal struct HashableTuple<A : Hashable, B : Hashable> : Hashable {
     let a :A
