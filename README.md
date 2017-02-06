@@ -1,8 +1,8 @@
-# Bayes [![Build Status](https://travis-ci.org/fcanas/Bayes.svg)](https://travis-ci.org/fcanas/Bayes)
+# Bayes [![Build Status](https://travis-ci.org/fcanas/Bayes.svg?branch=master](https://travis-ci.org/fcanas/Bayes)
 
-Bayes is a [Naive Bayes Classifier](http://en.wikipedia.org/wiki/Naive_Bayes_classifier) for iOS and Mac platforms. 
+Bayes is a [Naive Bayes Classifier](http://en.wikipedia.org/wiki/Naive_Bayes_classifier) for iOS and Mac platforms.
 
-Bayes is implemented in Swift and takes advantage of generics to enable any `Hashable`, `Equatable` type of your choosing or creation for use as category or feature. 
+Bayes is implemented in Swift and takes advantage of generics to enable any `Hashable`, `Equatable` type of your choosing or creation for use as category or feature.
 
 ## Installation
 
@@ -17,7 +17,7 @@ Since Bayes is written in Swift, you will need to be using a recent version of C
 
 ### Framework
 
-The project includes framework targets for iOS and Mac. Pull the repository and build the appropriate target for you. 
+The project includes framework targets for iOS and Mac. Pull the repository and build the appropriate target for you.
 When Bayes reaches a release milestone, it will be appropriately tagged and should be easily available via [Carthage](https://github.com/Carthage/Carthage).
 
 ## Use

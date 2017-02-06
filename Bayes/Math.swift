@@ -6,23 +6,23 @@
 //  Copyright (c) 2015 Fabian Canas. All rights reserved.
 //
 
-public func product <S :SequenceType where S.Generator.Element == Double> (s: S) -> Double {
-    return s.reduce(Double(1.0), combine: *)
+public func product <S :Sequence> (_ s: S) -> Double where S.Iterator.Element == Double {
+    return s.reduce(Double(1.0), *)
 }
 
-public func sum <S :SequenceType where S.Generator.Element == Double> (s: S) -> Double {
-    return s.reduce(Double(0.0), combine: +)
+public func sum <S :Sequence> (_ s: S) -> Double where S.Iterator.Element == Double {
+    return s.reduce(Double(0.0), +)
 }
 
-public func argmax <T, V: Comparable> (collection :[T:V]) -> T? {
-    return vararg({ $0 > $1 })(collection: collection)
+public func argmax <T, V: Comparable> (_ collection :[T:V]) -> T? {
+    return vararg({ $0 > $1 })(collection)
 }
 
-public func argmin <T, V: Comparable> (collection :[T:V]) -> T? {
-    return vararg({ $0 < $1 })(collection: collection)
+public func argmin <T, V: Comparable> (_ collection :[T:V]) -> T? {
+    return vararg({ $0 < $1 })(collection)
 }
 
-private func vararg <T, V: Comparable> (f: (V, V) -> Bool) -> (collection :[T:V]) -> T? {
+private func vararg <T, V: Comparable> (_ f: @escaping (V, V) -> Bool) -> (_ collection :[T:V]) -> T? {
     return { collection in
         if collection.isEmpty {
             return nil
