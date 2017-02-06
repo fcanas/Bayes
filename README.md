@@ -1,4 +1,4 @@
-# Bayes [![Build Status](https://travis-ci.org/fcanas/Bayes.svg?branch=master](https://travis-ci.org/fcanas/Bayes)
+# Bayes [![Build Status](https://travis-ci.org/fcanas/Bayes.svg?branch=master)](https://travis-ci.org/fcanas/Bayes)
 
 Bayes is a [Naive Bayes Classifier](http://en.wikipedia.org/wiki/Naive_Bayes_classifier) for iOS and Mac platforms.
 
