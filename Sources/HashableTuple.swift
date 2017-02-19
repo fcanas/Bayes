@@ -8,7 +8,7 @@
 
 /** 
  A (Hashable, Hashable) isn't Hashable. But representing conditional
- probilities in a Set or Dictionary is easier if they are.
+ probabilities in a Set or Dictionary is easier if they are.
 */
 internal struct HashableTuple<A : Hashable, B : Hashable> : Hashable {
     let a :A
