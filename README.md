@@ -6,6 +6,10 @@ Bayes is implemented in Swift and takes advantage of generics to enable any `Has
 
 ## Installation
 
+### Swift Package
+
+Bayes is built as a Swift package.
+
 ### CocoaPods
 
 Bayes is available as a [CocoaPod](http://cocoapods.org), but has not yet been versioned and submitted to trunk. So to use it:
