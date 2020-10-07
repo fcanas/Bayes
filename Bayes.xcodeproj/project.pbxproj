@@ -83,6 +83,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F3803D8252DF39F00DBAB72 /* Bayes */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* BayesianClassifier.swift */,
+				OBJ_9 /* EventSpace.swift */,
+				OBJ_10 /* HashableTuple.swift */,
+				OBJ_11 /* IncrementingBag.swift */,
+				OBJ_12 /* Math.swift */,
+			);
+			path = Bayes;
+			sourceTree = "<group>";
+		};
 		OBJ_13 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,11 +136,7 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_8 /* BayesianClassifier.swift */,
-				OBJ_9 /* EventSpace.swift */,
-				OBJ_10 /* HashableTuple.swift */,
-				OBJ_11 /* IncrementingBag.swift */,
-				OBJ_12 /* Math.swift */,
+				2F3803D8252DF39F00DBAB72 /* Bayes */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
