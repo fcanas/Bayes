@@ -52,7 +52,7 @@
 
 /* Begin PBXFileReference section */
 		"Bayes::Bayes::Product" /* Bayes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Bayes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"Bayes::BayesTests::Product" /* BayesTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = BayesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Bayes::BayesTests::Product" /* BayesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = BayesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* HashableTuple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableTuple.swift; sourceTree = "<group>"; };
 		OBJ_11 /* IncrementingBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementingBag.swift; sourceTree = "<group>"; };
 		OBJ_12 /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
@@ -190,6 +190,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					"Bayes::Bayes" = {
+						LastSwiftMigration = 1200;
+					};
+				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Bayes" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -274,7 +279,7 @@
 					"$(inherited)",
 					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -282,7 +287,7 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGET_NAME = Bayes;
 			};
 			name = Debug;
@@ -302,7 +307,7 @@
 					"$(inherited)",
 					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -310,7 +315,7 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGET_NAME = Bayes;
 			};
 			name = Release;
@@ -325,6 +330,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "-DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -332,6 +338,7 @@
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				USE_HEADERMAP = NO;
 			};
 			name = Debug;
@@ -363,6 +370,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_OPTIMIZATION_LEVEL = s;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				OTHER_SWIFT_FLAGS = "-DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -370,6 +378,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				USE_HEADERMAP = NO;
 			};
 			name = Release;
@@ -404,7 +413,7 @@
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGET_NAME = BayesTests;
 			};
 			name = Debug;
@@ -427,7 +436,7 @@
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGET_NAME = BayesTests;
 			};
 			name = Release;
