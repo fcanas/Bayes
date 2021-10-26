@@ -18,12 +18,6 @@ internal struct HashableTuple<A : Hashable, B : Hashable> : Hashable {
         self.a = a
         self.b = b
     }
-    
-    var hashValue :Int {
-        get {
-            return a.hashValue ^ b.hashValue
-        }
-    }
 }
 
 internal func == <A, B> (lhs: HashableTuple<A,B>, rhs: HashableTuple<A,B>) -> Bool {

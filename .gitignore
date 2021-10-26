@@ -64,3 +64,4 @@ iOSInjectionProject/
 .DS_Store
 .build
 Bayes.xcodeproj
+.swiftpm/xcode
