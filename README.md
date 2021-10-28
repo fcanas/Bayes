@@ -1,4 +1,4 @@
-# Bayes ![Build](https://github.com/fcanas/Bayes/actions/workflows/swift.yml/badge.svg?branch=main)
+# Bayes [![Build](https://github.com/fcanas/Bayes/actions/workflows/swift.yml/badge.svg?branch=main)](https://github.com/fcanas/Bayes/actions/workflows/swift.yml)
 
 Bayes is a [Naive Bayes Classifier](http://en.wikipedia.org/wiki/Naive_Bayes_classifier) for iOS and Mac platforms.
 
